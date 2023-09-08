@@ -1,0 +1,142 @@
+.pfx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeContainer {
+  height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.midSec-cont{
+  flex-direction: column;
+  width: 50%;
+}
+
+.googleLogo {
+  width: 100%;
+}
+.googleLogo img {
+  max-width: 40%;
+}
+
+.input-field {
+  border: solid 1px #cacaca;
+  padding: 5px;
+  border-radius: 50px;
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+  justify-content: space-between;
+}
+.input-field .inp{
+  width: 90%;
+  font-size: 1.2rem;
+  color: #494949;
+  border: none;
+  padding-left: 20px;
+}
+.input-field .inp:focus {
+  outline: none;
+}
+.input-field .searchIcon {
+  color: #4e86ff;
+  padding: 10px;
+  width: 70px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #e8eefc;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.linkCont {
+  gap: 40px;
+  margin-top: 30px;
+}
+.linkCont .link {
+  text-decoration: none;
+  color: #797979;
+  font-weight: 600;
+  flex-direction: column;
+  gap: 10px;
+}
+.link .icon{
+  font-size: 1.3rem;
+}
+.linesContainer{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+}
+.linesContainer .line{
+  width: 350px;
+  height: 5px;
+  margin-top: 25px;
+}
+.linesContainer .l1{
+  background-color: #4285F4;
+  box-shadow: 0px -3px 30px #1d73ff;
+}
+.linesContainer .l2{
+  background-color: #EA4335;
+  box-shadow: 0px -3px 30px #ff3320;
+}
+.linesContainer .l3{
+  background-color: #FBBC05;
+  box-shadow: 0px -3px 30px #fdbe00;
+}
+.linesContainer .l4{
+  background-color: #34A853;
+  box-shadow: 0px -3px 30px #20fc5b;
+}
+
+
+.container{
+  width: 75px;
+  height: 30px;
+  border: solid 1px #aab8d1;  
+  border-radius: 50px;
+  background : url('../../Resources/lightmode.png');
+  background-size: cover;
+  position: relative;
+  padding: 3px;
+  margin-right: 20px;
+  transition: all 400ms ease-in-out;
+}
+.circle{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 5px;
+  background-color: #ffc636;
+  border-radius: 100px;
+  transition: all 400ms ease-in-out;
+  border: solid 1px #8693a8;  
+}
+
+
+@media screen and (max-width: 480px) {
+  .googleLogo img {
+    max-width: 30%;
+  }
+  .homeContainer{
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  .homeContainer .input-field {
+    width: 80%;
+  }
+  .linesContainer .line{
+    width: 120px;
+    height: 5px;
+  }
+  .midSec-cont{
+    width: 100%;
+    margin-top: -200px;
+  }
+}

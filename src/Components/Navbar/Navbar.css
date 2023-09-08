@@ -1,0 +1,9 @@
+.navbar {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    padding: 20px;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}

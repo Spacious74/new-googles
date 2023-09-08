@@ -1,0 +1,68 @@
+
+.searchResults-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+.searchInformation{
+    width: 52%;
+    margin-left: 15%;
+    padding: 20px 0px;
+}
+.resultCard{
+    width: 52%;
+    margin-left: 15%;
+}
+
+.resultCard .logoandHeader{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logoandHeader .linksHeader{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.logoandHeader .linksHeader .displayLink{
+    text-decoration: none;
+    color: #525252;
+    font-size: 0.9rem;
+}
+.logoandHeader .linksHeader .linktitle{
+    text-decoration: none;
+    margin: 0px;
+    color: #080808;
+    font-weight: 600;
+}
+.logoandHeader .linksHeader .linktitle:hover{
+    text-decoration: underline 2px;
+}
+
+.resultCard .linkImage img{
+    width: 40px;
+    height: 40px;
+    border: solid 1px #b1afb8;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 540px) {
+    .searchResults-container{
+        gap: 0px;
+        width: 100%;
+    }
+    .searchInformation{
+        width: 90%;
+        margin-left: 0px;
+        padding: 20px 10px;
+    }
+    .resultCard{
+        width: 95%;
+        margin-left: 0px;
+        padding: 20px 10px;
+    }
+}
